@@ -160,5 +160,26 @@ var oracion5 = oracion3.charAt(0).toUpperCase().concat(oracion3.slice(1,));
 console.log(oracion4);
 console.log(oracion5);
 
+var numbers = [4, 2, 5, 1, 3]; numbers.sort(function(a, b) {
+    if (a < b) {
+       return -1;
+   }
+
+   if (a > b) {
+       return 1;
+   }
+
+   return 0;
+});
+console.log(numbers);
+// output [1, 2, 3, 4, 5]
+//o la versión simple
+var numbers = [4, 2, 5, 1, 3]; numbers.sort(function(a, b) {
+    console.log(b);
+   return a - b;
+});
+console.log(numbers);
+// output [1, 2, 3, 4, 5]
+
 
 
