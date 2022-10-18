@@ -60,3 +60,50 @@ matriz3.splice(1,2);//[1,3,6,8,8]
 matriz3.splice(2);//[1,3]
 console.log(matriz3);
 
+//UnShift -> Agrega elemento al inicio de la matriz
+const matriz4 = [1,5,2,3,6,8,8]
+matriz4.unshift('palabra',8);
+console.log(matriz4)
+
+//Shift -> Elimina el PRIMER objeto en la matriz
+
+const matriz5 = [1,5,2,3,6,8,8]
+matriz5.shift();
+//console.log(matriz5)
+
+//Slice -> devuelve una parte de la matriz en formato matriz
+
+const matriz6 = [1,5,8,4,6,9,8]
+const sliceMatriz1 = matriz6.slice(2,5); //-> Entrega una matriz con la parte desde le indice 2 hasta el 5
+const sliceMatriz2 = matriz6.slice(2);//-> Entrega una parte desde el indice 2 hasta el final de la matriz
+const sliceMatriz3 = matriz6.slice(-3);//-> Entrega los 3 últimos dígitos de la matriz
+const sliceMatriz4 = matriz6.slice(2,-2);//-> Entrega una parte de la matriz desde el indice 2 hasta 2 posiciones menos que el final
+//console.log(matriz6);
+console.log(sliceMatriz4);
+//--------------------------
+
+//tipos de declaración variables
+/* 
+    var -> se ocupa cuando uno declara una variable GLOBAL
+    let -> se ocupa cuando uno declara una variable LOCAL
+    const -> se ocupa cuando uno declara una variable que NO debe cambiar
+*/
+
+var x = 1;
+var y = 2;
+function f (){
+    let z = 0;
+    x = 2;
+}
+f();
+console.log(x);
+
+function g (){
+    const b = 5;
+    let a = 5;
+    console.log(a);
+    console.log(b);
+    return b;
+}
+var respuesta = g();
+console.log(respuesta);
