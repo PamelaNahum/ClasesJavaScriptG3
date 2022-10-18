@@ -15,7 +15,11 @@ saludo('Fernando');
     verdadero o verdadero -> verdadero
     falso o verdadero -> verdadero
     verdadero o falso -> verdadero
-    falso o falso -> falso */
+    falso o falso -> falso
+    !(verdadero y verdadero)->falso
+    !verdadero y verdadero -> falso
+    !falso y verdadero -> verdadero
+    */
 
 //operadores Aritmético
 /* Nos ayudan a hacer operación matemáticas
@@ -75,7 +79,7 @@ else{
 /* > -> mayor que -> 2>8 -> falso -> 2>2 -> falso
     < ->menor que -> 2<8 -> verdadero
     <= -> menor o igual que -> 2>=2 -> verdadero -> 2>=8 falso
-    >= -> meyor o igual que -> 2<=2 -> verdadero -> 2<=8 verdadero
+    >= -> mayor o igual que -> 2<=2 -> verdadero -> 2<=8 verdadero
     == -> igual -> 2==2 -> verdadero -> 3==2 -> falso 
     != -> distinto de -> 2!=2 -> falso -> 3!=2 -> verdadero
 
@@ -125,7 +129,7 @@ divisible2(12);
 //Funciones básicas de cadenas (strings)
 /*
 toUpperCase() -> convierte todo string a mayúsculas
-toLowerCase() -> convierte todo String rn minúscula
+toLowerCase() -> convierte todo String en minúscula
 charAt() -> toma una cadena de texto y la separa en caracteres, si no le poner parámetro asume que es un 0
 concat() -> une dos o más Strings
 parseInt() -> toma String y los convierte a number
@@ -145,7 +149,7 @@ var numInt = parseInt(num);
 console.log(typeof(numInt));
 console.log(numInt);
 
-//como dejar mayúscula la primera litra de una oracion
+//como dejar mayúscula la primera letra de una oracion
 
 var oracion3 = "esta es otra oración";
 var primeraLetra = oracion3.charAt(0);
@@ -155,5 +159,6 @@ var oracion4 = primeraLetra.toUpperCase().concat(restoOracion);
 var oracion5 = oracion3.charAt(0).toUpperCase().concat(oracion3.slice(1,));
 console.log(oracion4);
 console.log(oracion5);
+
 
 
